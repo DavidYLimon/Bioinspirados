@@ -2,7 +2,7 @@
 Ant Colony inspirado en el comportamiento de las homigas,
 
 - inicializacion: cada hormiga da el rol por toda la ciudad pero regresa al punto de partida (o se puede referir a una posible ruta pal rol)
-- Eploracion: Cada hormiga decide que ruta tomar dependiendo de feromonas de la ruta 
+- Exploracion: Cada hormiga decide que ruta tomar dependiendo de feromonas de la ruta 
 - Deposicion de feromanas : a lo largo de los ciclos las hormigas toman una ruta y al tomarla dejan feromonas a la ruta mas optima y asi generar como un mapa de la mejor ruta posible 
 - Evaporacionde feromonas : no permite que las feromonas de las hormigas se almacenene por mucho tiempo, lo que obliga a generar nuevas y mejores rutas 
 - Mejora de la solucion : al terminal el numero de iteraciones la mejor solucion hasta el momento es la mas aproximada al problema 
