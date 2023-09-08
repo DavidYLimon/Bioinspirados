@@ -56,8 +56,8 @@ for i, individual in enumerate(initial_population):
 print("\nMejor individuo en la Generación Inicial:", best_individual_initial)
 print("Su Aptitud:", best_fitness_initial)
 
-# Realiza el cruce (mezcla) en la segunda generación
-print("\nCruce (Mezcla) en la Segunda Generación\n")
+# Realiza el cruce en la segunda generación
+#-----------------------print("\nCruce en la Segunda Generación\n")
 new_population = []
 for i in range(15):
     # Selecciona dos padres aleatorios de la población inicial
@@ -76,7 +76,7 @@ best_individual_mixed = None
 best_fitness_mixed = float('-inf')
 
 # Imprime la población resultante del cruce
-print("\nPoblación Resultante del Cruce\n")
+print("\n\nPoblación Resultante del Cruce\n")
 for i, individual in enumerate(new_population):
     fitness = calculate_fitness(individual)
     print(f"Individuo {i + 1}: {individual}, Aptitud: {fitness}")
@@ -92,7 +92,7 @@ print("Su Aptitud:", best_fitness_mixed)
 mutation_rate = 0.1  # Puedes cambiar este valor según sea necesario
 
 # Aplica mutación a la población de mezcla
-print("\nMutación en la Tercera Generación (Población de Mezcla)\n")
+#-----------------------print("\nMutación en la Tercera Generación (Población de Cruce)\n")
 mixed_population = []
 for i in range(len(new_population)):
     mixed_population.append(mutate(new_population[i], mutation_rate))
@@ -102,7 +102,7 @@ best_individual_mutation = None
 best_fitness_mutation = float('-inf')
 
 # Imprime la población con mutación
-print("\nPoblación con Mutación\n")
+print("\n\nPoblación con Mutación\n")
 for i, individual in enumerate(mixed_population):
     fitness = calculate_fitness(individual)
     print(f"Individuo {i + 1}: {individual}, Aptitud: {fitness}")
