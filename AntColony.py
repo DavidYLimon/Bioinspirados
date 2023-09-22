@@ -15,10 +15,10 @@ num_ciudades = 10
 num_hormigas = 5
 iteraciones = 100
 tasa_evaporacion = 0.5
-alfa = 1.0  # Peso de las feromonas
-beta = 2.0  # Peso de la heurística
+alfa = 1.0  #feromonas
+beta = 2.0  # heurística
 
-# Matriz de distancias entre ciudades (aquí puedes definir tu propio grafo)
+# Matriz de distancias entre ciudades 
 distancias = [[0, 29, 20, 21, 16, 31, 100, 12, 4, 31],
               [29, 0, 15, 18, 12, 27, 10, 25, 13, 17],
               [20, 15, 0, 28, 7, 19, 21, 8, 26, 11],
